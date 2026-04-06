@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Databáze | Archaeo-LLM</title>
+  <meta name="description" content="Skutečný databázový návrh projektu Archaeo-LLM podle modelu vytvořeného v MySQL Workbench.">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header>
+    <h1>Archaeo-LLM</h1>
+    <p>Databázová dokumentace projektu</p>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Domů</a></li>
+        <li><a href="database.html">Databáze</a></li>
+        <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="about.html">O projektu</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Popis databázového návrhu</h2>
+      <p>
+        Databáze projektu Archaeo-LLM je navržena pro evidenci archeologických nálezů,
+        zejména mincí a dalších předmětů, jejich materiálů, fotografií a lokalit nálezu.
+      </p>
+      <p>
+        Model byl vytvořen v aplikaci MySQL Workbench a vychází z relačního přístupu.
+        Centrální tabulkou je tabulka <strong>artifact</strong>, na kterou se vážou další části databáze.
+      </p>
+    </section>
+
+    <section>
+      <h2>Hlavní tabulky databáze</h2>
+      <ul>
+        <li><strong>category</strong> – kategorie předmětu</li>
+        <li><strong>site</strong> – lokalita nebo místo nálezu</li>
+        <li><strong>artifact</strong> – hlavní evidence archeologického předmětu</li>
+        <li><strong>photo</strong> – fotografie předmětu</li>
+        <li><strong>material</strong> – materiál předmětu</li>
+        <li><strong>artifact_material</strong> – spojovací tabulka mezi předmětem a materiálem</li>
+        <li><strong>artifact_detail</strong> – detailní technické údaje o předmětu</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Základní vztahy</h2>
+      <ul>
+        <li>jedna <strong>category</strong> může být přiřazena k více záznamům v tabulce <strong>artifact</strong></li>
+        <li>jedno <strong>site</strong> může být přiřazeno k více záznamům v tabulce <strong>artifact</strong></li>
+        <li>jeden <strong>artifact</strong> může mít více záznamů v tabulce <strong>photo</strong></li>
+        <li>tabulka <strong>artifact_material</strong> řeší vztah mezi <strong>artifact</strong> a <strong>material</strong></li>
+        <li>tabulka <strong>artifact_detail</strong> rozšiřuje hlavní záznam o detailní údaje</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Přehled tabulek a atributů</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Tabulka</th>
+            <th>Hlavní atributy</th>
+            <th>Účel</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>category</td>
+            <td>category_id, category_name</td>
+            <td>evidence kategorií archeologických předmětů</td>
+          </tr>
+          <tr>
+            <td>site</td>
+            <td>site_id, site_name, country, region, latitude, longitude, description</td>
+            <td>uložení údajů o lokalitě nálezu</td>
+          </tr>
+          <tr>
+            <td>artifact</td>
+            <td>artifact_id, category_id, site_id, inventory_code, title, period_name, estimated_date, short_description</td>
+            <td>hlavní tabulka projektu s evidencí nálezů</td>
+          </tr>
+          <tr>
+            <td>photo</td>
+            <td>photo_id, artifact_id, file_name, alt_text, is_primary</td>
+            <td>uložení obrázků a vazba na konkrétní předmět</td>
+          </tr>
+          <tr>
+            <td>material</td>
+            <td>material_id, material_name, description</td>
+            <td>číselník materiálů</td>
+          </tr>
+          <tr>
+            <td>artifact_material</td>
+            <td>artifact_id, material_id, note</td>
+            <td>propojení předmětů a materiálů</td>
+          </tr>
+          <tr>
+            <td>artifact_detail</td>
+            <td>artifact_id, weight_g, height_mm, width_mm, condition_state, discovery_year, detailed_description</td>
+            <td>detailní technické a popisné informace o předmětu</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Archaeo-LLM | Studentský projekt VOŠ</p>
+  </footer>
+</body>
+</html>

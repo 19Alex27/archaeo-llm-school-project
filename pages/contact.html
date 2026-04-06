@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt | Archaeo-LLM</title>
+    <meta
+      name="description"
+      content="Kontaktní stránka a ukázkový formulář projektu Archaeo-LLM."
+    />
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Archaeo-LLM</h1>
+      <p>Kontaktní stránka a ukázkový formulář</p>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Domů</a></li>
+          <li><a href="database.html">Databáze</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="about.html">O projektu</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Kontakt</h2>
+        <p>
+          Tato stránka obsahuje ukázkový formulář pro webovou prezentaci
+          projektu Archaeo-LLM. Formulář slouží jako demonstrace různých
+          vstupních polí.
+        </p>
+      </section>
+
+      <section>
+        <h2>Kontaktní formulář</h2>
+        <form>
+          <p>
+            <label for="name">Jméno:</label><br />
+            <input type="text" id="name" name="name" required />
+          </p>
+
+          <p>
+            <label for="email">E-mail:</label><br />
+            <input type="email" id="email" name="email" required />
+          </p>
+
+          <p>
+            <label for="date">Datum:</label><br />
+            <input type="date" id="date" name="date" />
+          </p>
+
+          <p>
+            <label for="topic">Téma dotazu:</label><br />
+            <select id="topic" name="topic">
+              <option value="database">Databáze</option>
+              <option value="gallery">Galerie</option>
+              <option value="project">Projekt Archaeo-LLM</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="message">Zpráva:</label><br />
+            <textarea id="message" name="message" rows="6"></textarea>
+          </p>
+
+          <p>
+            <input type="checkbox" id="agree" name="agree" />
+            <label for="agree"
+              >Souhlasím se zpracováním údajů pro účely demonstrace
+              formuláře.</label
+            >
+          </p>
+
+          <p>
+            <input type="submit" value="Odeslat" />
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Archaeo-LLM | Studentský projekt VOŠ</p>
+    </footer>
+  </body>
+</html>
