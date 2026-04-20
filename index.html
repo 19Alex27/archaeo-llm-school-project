@@ -15,10 +15,9 @@
       <h1>Archaeo-LLM</h1>
       <p>Databáze archeologických nálezů a webová dokumentace projektu</p>
 
-      <nav>
+            <nav aria-label="Hlavní navigace">
         <ul>
-          <li><a href="#uvod">Úvod</a></li>
-          <li><a href="#prehled">Přehled projektu</a></li>
+          <li><a href="index.html">Domů</a></li>
           <li><a href="pages/database.html">Databáze</a></li>
           <li><a href="pages/gallery.html">Galerie</a></li>
           <li><a href="pages/about.html">O projektu</a></li>
@@ -35,7 +34,18 @@
       </nav>
     </header>
 
-    <main>
+        <main>
+      <section class="page-nav" aria-labelledby="rychla-navigace">
+        <h2 id="rychla-navigace">Rychlá navigace na této stránce</h2>
+        <nav aria-label="Navigace v této stránce">
+          <ul>
+            <li><a href="#uvod">Úvod</a></li>
+            <li><a href="#prehled">Přehled projektu</a></li>
+            <li><a href="#cile">Hlavní cíle</a></li>
+          </ul>
+        </nav>
+      </section>
+
       <section id="uvod">
         <h2>Úvod</h2>
         <p>
@@ -75,4 +85,5 @@
     </footer>
 </body>
 </html>
+
 

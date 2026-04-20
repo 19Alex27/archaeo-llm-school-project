@@ -151,4 +151,16 @@ button[type="submit"]:hover {
   outline: 3px solid var(--color-focus);
   outline-offset: 3px;
 }
+.page-nav a {
+  color: var(--color-primary);
+}
 
+.page-nav a:hover {
+  color: var(--color-primary-hover);
+}
+
+.page-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
