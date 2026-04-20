@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
@@ -60,6 +60,58 @@
       </ul>
     </section>
 
+    <section>
+      <h2>Kardinality vztahů</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Vztah</th>
+            <th>Kardinalita</th>
+            <th>Vysvětlení</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>category → artifact</td>
+            <td>1:N</td>
+            <td>Jedna kategorie může obsahovat více archeologických předmětů.</td>
+          </tr>
+          <tr>
+            <td>site → artifact</td>
+            <td>1:N</td>
+            <td>Jedna lokalita může být spojena s více nálezy.</td>
+          </tr>
+          <tr>
+            <td>artifact → photo</td>
+            <td>1:N</td>
+            <td>Jeden předmět může mít více fotografií.</td>
+          </tr>
+          <tr>
+            <td>artifact ↔ material</td>
+            <td>M:N</td>
+            <td>Vztah mezi předměty a materiály je řešen spojovací tabulkou artifact_material.</td>
+          </tr>
+          <tr>
+            <td>artifact → artifact_detail</td>
+            <td>1:1</td>
+            <td>Detailní tabulka rozšiřuje hlavní záznam o technické a popisné údaje.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Ukázková demo data</h2>
+      <p>
+        Pro demonstrační účely jsou ve webové prezentaci použity tři záznamy
+        byzantských mincí z veřejné databáze Portable Antiquities Scheme:
+      </p>
+      <ul>
+        <li><strong>PAS-1228223</strong> – SWYOR-E28B1E</li>
+        <li><strong>PAS-1225300</strong> – WAW-28D4AE</li>
+        <li><strong>PAS-1112809</strong> – NLM53533</li>
+      </ul>
+    </section>
     <section>
       <h2>Přehled tabulek a atributů</h2>
       <table>
