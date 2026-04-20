@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="cs">
   <head>
     <meta charset="UTF-8" />
@@ -6,61 +6,81 @@
     <title>O projektu | Archaeo-LLM</title>
     <meta
       name="description"
-      content="Informace o studentském projektu Archaeo-LLM."
+      content="Informace o studentském projektu Archaeo-LLM, který propojuje databázový návrh, webovou prezentaci a dokumentaci archeologických nálezů."
     />
     <link rel="stylesheet" href="../assets/style.css" />
   </head>
   <body>
     <header>
       <h1>Archaeo-LLM</h1>
-      <p>Informace o projektu a jeho zaměření</p>
+      <p>Informace o projektu a jeho studijním zaměření</p>
 
       <nav>
         <ul>
           <li><a href="../index.html">Domů</a></li>
+          <li><a href="#charakteristika">Charakteristika</a></li>
           <li><a href="database.html">Databáze</a></li>
           <li><a href="gallery.html">Galerie</a></li>
-          <li><a href="about.html">O projektu</a></li>
           <li><a href="contact.html">Kontakt</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
+      <section id="charakteristika">
         <h2>Charakteristika projektu</h2>
         <p>
-          Archaeo-LLM je studentský projekt zaměřený na databázovou evidenci
-          archeologických nálezů a jejich jednoduchou webovou dokumentaci.
+          Archaeo-LLM je studentský projekt vytvořený jako propojení předmětů
+          DBS a WEB. Databázová část řeší návrh zjednodušeného relačního modelu
+          pro evidenci archeologických nálezů, zatímco webová část slouží jako
+          veřejná prezentace a stručná dokumentace tohoto návrhu.
         </p>
         <p>
-          Praktická ukázka je orientována především na byzantské mince a na
-          práci s obrazovými a popisnými daty.
+          Praktická ukázka je zaměřena na byzantské mince, protože dobře
+          ukazují spojení textových údajů, datových vztahů a obrazové
+          dokumentace.
         </p>
       </section>
 
       <section>
-        <h2>Hlavní prvky projektu</h2>
+        <h2>Vazba mezi databází a webem</h2>
+        <p>
+          Webová prezentace navazuje na databázový model, ve kterém je hlavní
+          tabulkou <strong>artifact</strong>. Další tabulky popisují kategorii,
+          lokalitu nálezu, fotografie, materiály a detailní technické údaje
+          předmětu. Díky tomu je možné ukázat nejen samotné obrázky mincí, ale
+          také logiku evidence v relační databázi.
+        </p>
         <ul>
-          <li>návrh relační databáze</li>
-          <li>dokumentace entit a vztahů</li>
-          <li>základní webová prezentace</li>
-          <li>obrázková galerie archeologických předmětů</li>
-          <li>využití veřejně dostupných zdrojů dat</li>
+          <li>DBS část: návrh databáze, E-R model, relační model a demo data</li>
+          <li>WEB část: HTML stránky, galerie, tabulka a kontaktní formulář</li>
+          <li>společný výsledek: jednoduchá dokumentace archeologických nálezů</li>
         </ul>
       </section>
 
       <section>
-        <h2>Externí zdroj</h2>
+        <h2>Studijní účel</h2>
         <p>
-          Vybraná data a obrázky vycházejí z veřejně dostupného zdroje PAS:
+          Projekt není komerční aplikace. Slouží jako školní semestrální práce,
+          na které je možné ukázat základní principy databázového návrhu,
+          struktury HTML dokumentu, práce s CSS, přístupnosti, SEO a publikace
+          webu přes GitHub Pages.
+        </p>
+      </section>
+
+      <section>
+        <h2>Veřejný zdroj dat</h2>
+        <p>
+          Vybraná data a obrázky vycházejí z veřejně dostupného zdroje Portable
+          Antiquities Scheme. Tento zdroj je použit pouze jako demonstrační
+          materiál pro školní databázovou a webovou dokumentaci:
           <a
             href="https://finds.org.uk/database/search/results/q/COIN/broadperiod/BYZANTINE"
             target="_blank"
             rel="noopener noreferrer"
           >
             Portable Antiquities Scheme – Byzantine coins
-          </a>
+          </a>.
         </p>
       </section>
     </main>
