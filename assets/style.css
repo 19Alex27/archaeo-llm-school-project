@@ -1,3 +1,14 @@
+﻿:root {
+  --color-bg: #f5f1e8;
+  --color-surface: #ffffff;
+  --color-primary: #3f2f21;
+  --color-primary-hover: #5a4330;
+  --color-link: #f7d9a8;
+  --color-border: #c8b79c;
+  --color-focus: #9b6b2f;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+}
 * {
   box-sizing: border-box;
 }
@@ -123,7 +134,7 @@ textarea {
   resize: vertical;
 }
 
-input[type="submit"] {
+button[type="submit"] {
   background-color: #3f2f21;
   color: white;
   border: none;
@@ -133,6 +144,11 @@ input[type="submit"] {
   font-weight: bold;
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
   background-color: #5a4330;
 }
+*:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+

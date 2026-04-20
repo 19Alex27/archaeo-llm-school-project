@@ -1,4 +1,4 @@
-# Archaeo-LLM
+﻿# Archaeo-LLM
 
 Studentská webová prezentace projektu Archaeo-LLM zaměřeného na databázovou evidenci archeologických nálezů se zaměřením na byzantské mince.
 
@@ -22,9 +22,8 @@ Studentská webová prezentace projektu Archaeo-LLM zaměřeného na databázovo
 
 - HTML
 - CSS
-- JavaScript
 - Visual Studio Code
-
+- GitHub Pages
 ## Zdroj dat a obrázků
 
 Portable Antiquities Scheme:
@@ -34,6 +33,9 @@ https://finds.org.uk/database/search/results/q/COIN/broadperiod/BYZANTINE
 
 Student VOŠ – projekt Archaeo-LLM
 
-## Veřejná URL adresa
+## Odkazy na odevzdání
 
-(https://19alex27.github.io/archaeo-llm-school-project/)
+- GitHub repository: https://github.com/19Alex27/archaeo-llm-school-project
+- Veřejná URL adresa GitHub Pages: https://19alex27.github.io/archaeo-llm-school-project/
+
+
