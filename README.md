@@ -33,6 +33,13 @@ https://finds.org.uk/database/search/results/q/COIN/broadperiod/BYZANTINE
 
 Student VOŠ – projekt Archaeo-LLM
 
+## Optimalizace, SEO a přístupnost
+
+- Optimalizace: obrázky ve webové prezentaci jsou použity ve formátu WebP, mají atributy width a height a nejsou použity zbytečné JavaScript soubory.
+- SEO: každá HTML stránka obsahuje vlastní title, meta description, viewport a jazyk dokumentu lang="cs".
+- Přístupnost: obrázky mají alt texty, formulář používá label, fieldset a legend, ovládací prvky mají viditelný focus stav pomocí CSS.
+- Bezpečnost odkazů: externí odkazy otevřené v novém okně používají rel="noopener noreferrer".
+
 ## Semestrální práce
 
 - Dokumentace semestrální práce: [semestralni-prace/README.md](semestralni-prace/README.md)
@@ -43,6 +50,7 @@ Student VOŠ – projekt Archaeo-LLM
 
 - GitHub repository: https://github.com/19Alex27/archaeo-llm-school-project
 - Veřejná URL adresa GitHub Pages: https://19alex27.github.io/archaeo-llm-school-project/
+
 
 
 
